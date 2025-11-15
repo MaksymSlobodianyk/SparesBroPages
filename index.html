@@ -1,148 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SparesBro - Legal Documents</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="apple-touch-icon" href="logo.png" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #263238;
-            background: linear-gradient(135deg, #1E88E5 0%, #1565C0 100%);
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #263238;
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        padding: 20px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
+      .container {
+        max-width: 700px;
+        background: white;
+        padding: 50px 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      h1 {
+        color: #263238;
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      .app-logo {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+        object-fit: contain;
+        border-radius: 20px;
+      }
+
+      p {
+        color: #546e7a;
+        font-size: 1.1em;
+        margin-bottom: 40px;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .link-card {
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        padding: 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+      }
+
+      .link-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 25px rgba(30, 136, 229, 0.5);
+      }
+
+      .link-card h2 {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+      }
+
+      .link-card p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.95em;
+        margin: 0;
+      }
+
+      .footer {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 2px solid #ecf0f1;
+        color: #546e7a;
+        font-size: 0.9em;
+      }
+
+      .footer a {
+        color: #ff7043;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
         .container {
-            max-width: 700px;
-            background: white;
-            padding: 50px 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            text-align: center;
+          padding: 35px 25px;
         }
 
         h1 {
-            color: #263238;
-            font-size: 3em;
-            margin-bottom: 20px;
+          font-size: 2.2em;
         }
 
         .app-logo {
-            width: 150px;
-            height: 150px;
-            margin-bottom: 20px;
-            object-fit: contain;
-            border-radius: 20px;
+          width: 120px;
+          height: 120px;
         }
-
-        p {
-            color: #546e7a;
-            font-size: 1.1em;
-            margin-bottom: 40px;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .link-card {
-            background: linear-gradient(135deg, #1E88E5 0%, #1565C0 100%);
-            padding: 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            color: white;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
-        }
-
-        .link-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 25px rgba(30, 136, 229, 0.5);
-        }
-
-        .link-card h2 {
-            font-size: 1.5em;
-            margin-bottom: 8px;
-        }
-
-        .link-card p {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 0.95em;
-            margin: 0;
-        }
-
-        .footer {
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #ecf0f1;
-            color: #546e7a;
-            font-size: 0.9em;
-        }
-
-        .footer a {
-            color: #FF7043;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 35px 25px;
-            }
-
-            h1 {
-                font-size: 2.2em;
-            }
-
-            .app-logo {
-                width: 120px;
-                height: 120px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <img src="logo.png" alt="SparesBro Logo" class="app-logo">
-        <h1>SparesBro</h1>
-        <p>Track and manage your consumable items with ease</p>
+      <img src="logo.png" alt="SparesBro Logo" class="app-logo" />
+      <h1>SparesBro</h1>
+      <p>Track and manage your consumable items with ease</p>
 
-        <div class="links">
-            <a href="privacy_policy.html" class="link-card">
-                <h2>🔒 Privacy Policy</h2>
-                <p>Learn how we protect your data</p>
-            </a>
+      <div class="links">
+        <a href="privacy_policy.html" class="link-card">
+          <h2>🔒 Privacy Policy</h2>
+          <p>Learn how we protect your data</p>
+        </a>
 
-            <a href="terms_and_conditions.html" class="link-card">
-                <h2>📜 Terms & Conditions</h2>
-                <p>Understand our service agreement</p>
-            </a>
-        </div>
+        <a href="terms_and_conditions.html" class="link-card">
+          <h2>📜 Terms & Conditions</h2>
+          <p>Understand our service agreement</p>
+        </a>
+      </div>
 
-        <div class="footer">
-            <p><strong>Maksym Slobodianyk</strong></p>
-            <p>Contact: <a href="mailto:sparesbro.app@gmail.com">sparesbro.app@gmail.com</a></p>
-            <p style="margin-top: 15px;">Last Updated: 15.11.2025</p>
-        </div>
+      <div class="footer">
+        <p><strong>Maksym Slobodianyk</strong></p>
+        <p>
+          Contact:
+          <a href="mailto:sparesbro.app@gmail.com">sparesbro.app@gmail.com</a>
+        </p>
+        <p style="margin-top: 15px">Last Updated: 15.11.2025</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-

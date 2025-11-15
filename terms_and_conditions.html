@@ -1,338 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terms and Conditions - SparesBro</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="apple-touch-icon" href="logo.png" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #263238;
-            background: linear-gradient(135deg, #1E88E5 0%, #1565C0 100%);
-            padding: 20px;
-            min-height: 100vh;
-        }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #263238;
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        padding: 20px;
+        min-height: 100vh;
+      }
 
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      }
+
+      .logo-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .logo-small {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      nav {
+        background: #f8f9fa;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #ff7043;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ff5722;
+      }
+
+      h1 {
+        color: #263238;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        border-bottom: 4px solid #ff7043;
+        padding-bottom: 15px;
+      }
+
+      h2 {
+        color: #263238;
+        font-size: 1.8em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        border-left: 4px solid #ffc107;
+      }
+
+      h3 {
+        color: #263238;
+        font-size: 1.3em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+
+      strong {
+        color: #263238;
+      }
+
+      ul {
+        margin: 15px 0 15px 40px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .last-updated {
+        color: #546e7a;
+        font-style: italic;
+        margin-bottom: 25px;
+        font-size: 0.95em;
+      }
+
+      .contact-info {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border-left: 4px solid #1e88e5;
+      }
+
+      .contact-info ul {
+        list-style: none;
+        margin-left: 0;
+      }
+
+      .contact-info li {
+        margin-bottom: 5px;
+      }
+
+      a {
+        color: #1e88e5;
+        text-decoration: none;
+        border-bottom: 1px dotted #1e88e5;
+      }
+
+      a:hover {
+        color: #1565c0;
+        border-bottom-color: #1565c0;
+      }
+
+      .important-notice {
+        background: #f8f9fa;
+        border-left: 4px solid #ffc107;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .divider {
+        border: 0;
+        height: 2px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #ff7043,
+          transparent
+        );
+        margin: 30px 0;
+      }
+
+      @media (max-width: 768px) {
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .logo-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .logo-small {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-
-        nav {
-            background: #f8f9fa;
-            padding: 15px 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: #FF7043;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #FF5722;
+          padding: 25px;
         }
 
         h1 {
-            color: #263238;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            border-bottom: 4px solid #FF7043;
-            padding-bottom: 15px;
+          font-size: 2em;
         }
 
         h2 {
-            color: #263238;
-            font-size: 1.8em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-left: 10px;
-            border-left: 4px solid #FFC107;
+          font-size: 1.5em;
         }
-
-        h3 {
-            color: #263238;
-            font-size: 1.3em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        strong {
-            color: #263238;
-        }
-
-        ul {
-            margin: 15px 0 15px 40px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .last-updated {
-            color: #546e7a;
-            font-style: italic;
-            margin-bottom: 25px;
-            font-size: 0.95em;
-        }
-
-        .contact-info {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #1E88E5;
-        }
-
-        .contact-info ul {
-            list-style: none;
-            margin-left: 0;
-        }
-
-        .contact-info li {
-            margin-bottom: 5px;
-        }
-
-        a {
-            color: #1E88E5;
-            text-decoration: none;
-            border-bottom: 1px dotted #1E88E5;
-        }
-
-        a:hover {
-            color: #1565C0;
-            border-bottom-color: #1565C0;
-        }
-
-        .important-notice {
-            background: #f8f9fa;
-            border-left: 4px solid #FFC107;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-
-        .divider {
-            border: 0;
-            height: 2px;
-            background: linear-gradient(to right, transparent, #FF7043, transparent);
-            margin: 30px 0;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 25px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="logo-header">
-            <img src="logo.png" alt="SparesBro Logo" class="logo-small">
-            <h1 style="border: none; padding: 0; margin: 0; font-size: 2em;">SparesBro</h1>
-        </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="privacy_policy.html">Privacy Policy</a>
-            <a href="terms_and_conditions.html">Terms & Conditions</a>
-        </nav>
-
-        <h1>Terms and Conditions for SparesBro</h1>
-        <p class="last-updated"><strong>Last Updated:</strong> 15.11.2025</p>
-
-        <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the SparesBro mobile application (the "Service") operated by Maksym Slobodianyk ("us", "we", or "our").</p>
-
-        <h2>Provider Information</h2>
-
-        <p>The Service is operated by:</p>
-        
-        <p>
-            <strong>Name:</strong> Maksym Slobodianyk<br />
-            <strong>Registered Seat:</strong><br />
-            <strong>ID No. (IČO):</strong><br />
-            <strong>Registration:</strong> Registered in the Trade Register (Živnostenský rejstřík) kept by the appropriate Trade Licensing Office.
-        </p>
-
-        <hr class="divider">
-
-        <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.</p>
-        
-        <p><strong>By downloading, installing, or using the Service, you agree to be bound by these Terms.</strong> If you disagree with any part of the terms, you may not access the Service.</p>
-
-        <h2>1. The Service</h2>
-
-        <p>SparesBro provides a tool to help users track and manage consumable items that require regular replacement. The Service allows you to log items, track stock levels, set replacement schedules (time-based or usage-based), and receive reminders.</p>
-
-        <p>The Service is offered in two versions:</p>
-
-        <ul>
-            <li><strong>Essential Version:</strong> A free version that allows you to track a limited number of items (one item).</li>
-            <li><strong>Unlimited Version:</strong> A paid version, unlocked via a one-time in-app purchase, which allows you to track unlimited items and enables data synchronization via Apple's iCloud service.</li>
-        </ul>
-
-        <h2>2. In-App Purchase</h2>
-
-        <p>The "Unlimited Version" is an optional upgrade available as a one-time in-app purchase.</p>
-
-        <p>All payments are processed through the Apple App Store, from which you originally downloaded the application. You agree to comply with all terms and conditions of the App Store. All purchases are final and non-refundable. Any refund requests or issues with payment must be directed to Apple, as we do not manage the transaction or have the ability to process refunds.</p>
-
-        <h2>3. User-Generated Content (Your Data)</h2>
-
-        <p>You are solely responsible for all data, information, item names, history logs, stock counts, and other content ("User Content") that you create or input into the Service.</p>
-
-        <p>You retain all ownership rights to your User Content. You grant us a limited, non-exclusive license solely to host, store, and display your User Content on your device (and in your personal iCloud account, if you purchase the Unlimited Version) for the sole purpose of providing the Service's functionality to you.</p>
-
-        <p>We are not responsible for the loss, corruption, or accuracy of your User Content. You are responsible for maintaining your own backups.</p>
-
-        <h2>4. iCloud Synchronization</h2>
-
-        <p>The "Unlimited Version" of the Service offers an optional feature to synchronize your User Content across your Apple devices using Apple's iCloud service.</p>
-
-        <p>This feature is provided "as is" and "as available." Your use of iCloud is subject to Apple's terms of service. We are not responsible for any data loss, synchronization errors, service interruptions, or other issues related to iCloud.</p>
-
-        <h2>5. License and Restrictions</h2>
-
-        <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the Service on any Apple-branded product that you own or control, as permitted by the Apple App Store Terms of Service.</p>
-
-        <p>You agree not to:</p>
-
-        <ul>
-            <li>Reverse engineer, decompile, or disassemble the Service.</li>
-            <li>Copy, modify, or create derivative works based on the Service.</li>
-            <li>Rent, lease, lend, sell, or sublicense the Service.</li>
-            <li>Use the Service for any illegal or unauthorized purpose.</li>
-        </ul>
-
-        <h2>6. Disclaimers and No Warranty</h2>
-
-        <p>The Service is provided "AS IS" and "AS AVAILABLE," without any warranties of any kind, express or implied.</p>
-
-        <p><strong>Important:</strong> The Service is an informational tool only. We do not warrant that the Service will be error-free, uninterrupted, or that its reminders will be 100% accurate or timely. You are solely responsible for remembering to replace your items. You should not rely solely on the Service's reminders for critical, safety-related, or high-value items (e.g., medical supplies, car parts, or safety equipment).</p>
-
-        <p>To the fullest extent permitted by law, we disclaim all liability for any damages or losses (including property damage, personal injury, or financial loss) resulting from a missed, late, or incorrect replacement, regardless of whether a reminder failed to function correctly.</p>
-
-        <h2>7. Limitation of Liability</h2>
-
-        <p>To the fullest extent permitted by law, in no event shall Maksym Slobodianyk, nor our affiliates, partners, or employees, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of data, loss of profits, or other intangible losses, resulting from your access to or use of, or inability to access or use, the Service.</p>
-
-        <p>Our total liability to you for all claims arising from or related to the Service is limited to the amount you paid for the one-time in-app purchase to unlock the "Unlimited Version".</p>
-
-        <h2>8. Privacy Policy and Analytics</h2>
-
-        <h3>8.1. Privacy Policy</h3>
-
-        <p>Your use of the Service is also governed by our Privacy Policy, which describes how we collect, use, and protect your data. You must agree to the Privacy Policy to use the Service. A link to our Privacy Policy can be found on our App Store page and within the Service.</p>
-
-        <h3>8.2. Third-Party Analytics</h3>
-
-        <p>We use third-party analytics services, including PostHog, to help us understand and improve how the Service is used. These tools may collect information about your device and your interactions with the Service, such as app events and usage patterns.</p>
-
-        <p>This information is used solely to identify bugs, improve usability, and enhance the Service's features. We take measures to configure these tools to avoid collecting the personal content you enter (such as item names or history logs), but you acknowledge that anonymous usage data will be collected.</p>
-
-        <p>By using the Service, you acknowledge that we use these analytics tools. For more information on PostHog's privacy practices, please review their privacy policy at <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a>. Our detailed data handling practices are fully described in our Privacy Policy.</p>
-
-        <h2>9. Termination</h2>
-
-        <p>We may terminate or suspend your license to use the Service immediately, without prior notice or liability, for any reason whatsoever, including if you breach these Terms.</p>
-
-        <p>You may terminate these Terms at any time by deleting the Service from your device.</p>
-
-        <h2>10. Governing Law</h2>
-
-        <p>These Terms shall be governed and construed in accordance with the laws of the Czech Republic, without regard to its conflict of law provisions. Any disputes arising out of or in connection with these Terms shall be submitted to the exclusive jurisdiction of the competent courts in the Czech Republic.</p>
-
-        <h2>11. Changes to These Terms</h2>
-
-        <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice (e.g., via an in-app notification) before new terms take effect. What constitutes a material change will be determined at our sole discretion.</p>
-
-        <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.</p>
-
-        <h2>12. Contact Us</h2>
-
-        <p>If you have any questions about these Terms, please contact us at: <strong><a href="mailto:sparesbro.app@gmail.com">sparesbro.app@gmail.com</a></strong></p>
-
-        <h2>13. Additional Terms for Apple iOS Users</h2>
-
-        <p>If you have downloaded the Service from the Apple App Store, the following additional terms apply:</p>
-
-        <h3>Acknowledgment</h3>
-
-        <p>You and Maksym Slobodianyk acknowledge that these Terms are concluded between you and Maksym Slobodianyk only, and not with Apple Inc. ("Apple"). Maksym Slobodianyk, not Apple, is solely responsible for the Service and its content.</p>
-
-        <h3>Scope of License</h3>
-
-        <p>The license granted to you for the Service is limited to a non-transferable license to use the Service on any Apple-branded products that you own or control and as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions.</p>
-
-        <h3>Maintenance and Support</h3>
-
-        <p>Maksym Slobodianyk is solely responsible for providing any maintenance and support services with respect to the Service, as specified in these Terms. You and Maksym Slobodianyk acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the Service.</p>
-
-        <h3>Warranty</h3>
-
-        <p>Maksym Slobodianyk is solely responsible for any product warranties, whether express or implied by law, to the extent not effectively disclaimed. In the event of any failure of the Service to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) for the Service to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the Service, and any other claims, losses, liabilities, damages, costs, or expenses attributable to any failure to conform to any warranty will be Maksym Slobodianyk's sole responsibility.</p>
-
-        <h3>Product Claims</h3>
-
-        <p>You and Maksym Slobodianyk acknowledge that Maksym Slobodianyk, not Apple, is responsible for addressing any claims by you or any third party relating to the Service or your possession and/or use of the Service, including, but not limited to: (i) product liability claims; (ii) any claim that the Service fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection, privacy, or similar legislation.</p>
-
-        <h3>Intellectual Property Rights</h3>
-
-        <p>You and Maksym Slobodianyk acknowledge that, in the event of any third-party claim that the Service or your possession and use of the Service infringes that third party's intellectual property rights, Maksym Slobodianyk, not Apple, will be solely responsible for the investigation, defense, settlement, and discharge of any such intellectual property infringement claim.</p>
-
-        <h3>Legal Compliance</h3>
-
-        <p>You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.</p>
-
-        <h3>Third-Party Beneficiary</h3>
-
-        <p>You and Maksym Slobodianyk acknowledge and agree that Apple, and Apple's subsidiaries, are third-party beneficiaries of these Terms, and that, upon your acceptance of the terms and conditions of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary thereof.</p>
+      <div class="logo-header">
+        <img src="logo.png" alt="SparesBro Logo" class="logo-small" />
+        <h1 style="border: none; padding: 0; margin: 0; font-size: 2em">
+          SparesBro
+        </h1>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_and_conditions.html">Terms & Conditions</a>
+      </nav>
+
+      <h1>Terms and Conditions for SparesBro</h1>
+      <p class="last-updated"><strong>Last Updated:</strong> 15.11.2025</p>
+
+      <p>
+        Please read these Terms and Conditions ("Terms", "Terms and Conditions")
+        carefully before using the SparesBro mobile application (the "Service")
+        operated by Maksym Slobodianyk ("us", "we", or "our").
+      </p>
+
+      <h2>Provider Information</h2>
+
+      <p>The Service is operated by:</p>
+
+      <p>
+        <strong>Name:</strong> Maksym Slobodianyk<br />
+        <strong>Registered Seat:</strong><br />
+        <strong>ID No. (IČO):</strong><br />
+        <strong>Registration:</strong> Registered in the Trade Register
+        (Živnostenský rejstřík) kept by the appropriate Trade Licensing Office.
+      </p>
+
+      <hr class="divider" />
+
+      <p>
+        Your access to and use of the Service is conditioned on your acceptance
+        of and compliance with these Terms. These Terms apply to all visitors,
+        users, and others who access or use the Service.
+      </p>
+
+      <p>
+        <strong
+          >By downloading, installing, or using the Service, you agree to be
+          bound by these Terms.</strong
+        >
+        If you disagree with any part of the terms, you may not access the
+        Service.
+      </p>
+
+      <h2>1. The Service</h2>
+
+      <p>
+        SparesBro provides a tool to help users track and manage consumable
+        items that require regular replacement. The Service allows you to log
+        items, track stock levels, set replacement schedules (time-based or
+        usage-based), and receive reminders.
+      </p>
+
+      <p>The Service is offered in two versions:</p>
+
+      <ul>
+        <li>
+          <strong>Essential Version:</strong> A free version that allows you to
+          track a limited number of items (one item).
+        </li>
+        <li>
+          <strong>Unlimited Version:</strong> A paid version, unlocked via a
+          one-time in-app purchase, which allows you to track unlimited items
+          and enables data synchronization via Apple's iCloud service.
+        </li>
+      </ul>
+
+      <h2>2. In-App Purchase</h2>
+
+      <p>
+        The "Unlimited Version" is an optional upgrade available as a one-time
+        in-app purchase.
+      </p>
+
+      <p>
+        All payments are processed through the Apple App Store, from which you
+        originally downloaded the application. You agree to comply with all
+        terms and conditions of the App Store. All purchases are final and
+        non-refundable. Any refund requests or issues with payment must be
+        directed to Apple, as we do not manage the transaction or have the
+        ability to process refunds.
+      </p>
+
+      <h2>3. User-Generated Content (Your Data)</h2>
+
+      <p>
+        You are solely responsible for all data, information, item names,
+        history logs, stock counts, and other content ("User Content") that you
+        create or input into the Service.
+      </p>
+
+      <p>
+        You retain all ownership rights to your User Content. You grant us a
+        limited, non-exclusive license solely to host, store, and display your
+        User Content on your device (and in your personal iCloud account, if you
+        purchase the Unlimited Version) for the sole purpose of providing the
+        Service's functionality to you.
+      </p>
+
+      <p>
+        We are not responsible for the loss, corruption, or accuracy of your
+        User Content. You are responsible for maintaining your own backups.
+      </p>
+
+      <h2>4. iCloud Synchronization</h2>
+
+      <p>
+        The "Unlimited Version" of the Service offers an optional feature to
+        synchronize your User Content across your Apple devices using Apple's
+        iCloud service.
+      </p>
+
+      <p>
+        This feature is provided "as is" and "as available." Your use of iCloud
+        is subject to Apple's terms of service. We are not responsible for any
+        data loss, synchronization errors, service interruptions, or other
+        issues related to iCloud.
+      </p>
+
+      <h2>5. License and Restrictions</h2>
+
+      <p>
+        We grant you a limited, non-exclusive, non-transferable, revocable
+        license to use the Service on any Apple-branded product that you own or
+        control, as permitted by the Apple App Store Terms of Service.
+      </p>
+
+      <p>You agree not to:</p>
+
+      <ul>
+        <li>Reverse engineer, decompile, or disassemble the Service.</li>
+        <li>Copy, modify, or create derivative works based on the Service.</li>
+        <li>Rent, lease, lend, sell, or sublicense the Service.</li>
+        <li>Use the Service for any illegal or unauthorized purpose.</li>
+      </ul>
+
+      <h2>6. Disclaimers and No Warranty</h2>
+
+      <p>
+        The Service is provided "AS IS" and "AS AVAILABLE," without any
+        warranties of any kind, express or implied.
+      </p>
+
+      <p>
+        <strong>Important:</strong> The Service is an informational tool only.
+        We do not warrant that the Service will be error-free, uninterrupted, or
+        that its reminders will be 100% accurate or timely. You are solely
+        responsible for remembering to replace your items. You should not rely
+        solely on the Service's reminders for critical, safety-related, or
+        high-value items (e.g., medical supplies, car parts, or safety
+        equipment).
+      </p>
+
+      <p>
+        To the fullest extent permitted by law, we disclaim all liability for
+        any damages or losses (including property damage, personal injury, or
+        financial loss) resulting from a missed, late, or incorrect replacement,
+        regardless of whether a reminder failed to function correctly.
+      </p>
+
+      <h2>7. Limitation of Liability</h2>
+
+      <p>
+        To the fullest extent permitted by law, in no event shall Maksym
+        Slobodianyk, nor our affiliates, partners, or employees, be liable for
+        any indirect, incidental, special, consequential, or punitive damages,
+        including without limitation, loss of data, loss of profits, or other
+        intangible losses, resulting from your access to or use of, or inability
+        to access or use, the Service.
+      </p>
+
+      <p>
+        Our total liability to you for all claims arising from or related to the
+        Service is limited to the amount you paid for the one-time in-app
+        purchase to unlock the "Unlimited Version".
+      </p>
+
+      <h2>8. Privacy Policy and Analytics</h2>
+
+      <h3>8.1. Privacy Policy</h3>
+
+      <p>
+        Your use of the Service is also governed by our Privacy Policy, which
+        describes how we collect, use, and protect your data. You must agree to
+        the Privacy Policy to use the Service. A link to our Privacy Policy can
+        be found on our App Store page and within the Service.
+      </p>
+
+      <h3>8.2. Third-Party Analytics</h3>
+
+      <p>
+        We use third-party analytics services, including PostHog, to help us
+        understand and improve how the Service is used. These tools may collect
+        information about your device and your interactions with the Service,
+        such as app events and usage patterns.
+      </p>
+
+      <p>
+        This information is used solely to identify bugs, improve usability, and
+        enhance the Service's features. We take measures to configure these
+        tools to avoid collecting the personal content you enter (such as item
+        names or history logs), but you acknowledge that anonymous usage data
+        will be collected.
+      </p>
+
+      <p>
+        By using the Service, you acknowledge that we use these analytics tools.
+        For more information on PostHog's privacy practices, please review their
+        privacy policy at
+        <a href="https://posthog.com/privacy" target="_blank"
+          >https://posthog.com/privacy</a
+        >. Our detailed data handling practices are fully described in our
+        Privacy Policy.
+      </p>
+
+      <h2>9. Termination</h2>
+
+      <p>
+        We may terminate or suspend your license to use the Service immediately,
+        without prior notice or liability, for any reason whatsoever, including
+        if you breach these Terms.
+      </p>
+
+      <p>
+        You may terminate these Terms at any time by deleting the Service from
+        your device.
+      </p>
+
+      <h2>10. Governing Law</h2>
+
+      <p>
+        These Terms shall be governed and construed in accordance with the laws
+        of the Czech Republic, without regard to its conflict of law provisions.
+        Any disputes arising out of or in connection with these Terms shall be
+        submitted to the exclusive jurisdiction of the competent courts in the
+        Czech Republic.
+      </p>
+
+      <h2>11. Changes to These Terms</h2>
+
+      <p>
+        We reserve the right, at our sole discretion, to modify or replace these
+        Terms at any time. If a revision is material, we will provide at least
+        30 days' notice (e.g., via an in-app notification) before new terms take
+        effect. What constitutes a material change will be determined at our
+        sole discretion.
+      </p>
+
+      <p>
+        By continuing to access or use our Service after those revisions become
+        effective, you agree to be bound by the revised terms.
+      </p>
+
+      <h2>12. Contact Us</h2>
+
+      <p>
+        If you have any questions about these Terms, please contact us at:
+        <strong
+          ><a href="mailto:sparesbro.app@gmail.com"
+            >sparesbro.app@gmail.com</a
+          ></strong
+        >
+      </p>
+
+      <h2>13. Additional Terms for Apple iOS Users</h2>
+
+      <p>
+        If you have downloaded the Service from the Apple App Store, the
+        following additional terms apply:
+      </p>
+
+      <h3>Acknowledgment</h3>
+
+      <p>
+        You and Maksym Slobodianyk acknowledge that these Terms are concluded
+        between you and Maksym Slobodianyk only, and not with Apple Inc.
+        ("Apple"). Maksym Slobodianyk, not Apple, is solely responsible for the
+        Service and its content.
+      </p>
+
+      <h3>Scope of License</h3>
+
+      <p>
+        The license granted to you for the Service is limited to a
+        non-transferable license to use the Service on any Apple-branded
+        products that you own or control and as permitted by the Usage Rules set
+        forth in the Apple Media Services Terms and Conditions.
+      </p>
+
+      <h3>Maintenance and Support</h3>
+
+      <p>
+        Maksym Slobodianyk is solely responsible for providing any maintenance
+        and support services with respect to the Service, as specified in these
+        Terms. You and Maksym Slobodianyk acknowledge that Apple has no
+        obligation whatsoever to furnish any maintenance and support services
+        with respect to the Service.
+      </p>
+
+      <h3>Warranty</h3>
+
+      <p>
+        Maksym Slobodianyk is solely responsible for any product warranties,
+        whether express or implied by law, to the extent not effectively
+        disclaimed. In the event of any failure of the Service to conform to any
+        applicable warranty, you may notify Apple, and Apple will refund the
+        purchase price (if any) for the Service to you. To the maximum extent
+        permitted by applicable law, Apple will have no other warranty
+        obligation whatsoever with respect to the Service, and any other claims,
+        losses, liabilities, damages, costs, or expenses attributable to any
+        failure to conform to any warranty will be Maksym Slobodianyk's sole
+        responsibility.
+      </p>
+
+      <h3>Product Claims</h3>
+
+      <p>
+        You and Maksym Slobodianyk acknowledge that Maksym Slobodianyk, not
+        Apple, is responsible for addressing any claims by you or any third
+        party relating to the Service or your possession and/or use of the
+        Service, including, but not limited to: (i) product liability claims;
+        (ii) any claim that the Service fails to conform to any applicable legal
+        or regulatory requirement; and (iii) claims arising under consumer
+        protection, privacy, or similar legislation.
+      </p>
+
+      <h3>Intellectual Property Rights</h3>
+
+      <p>
+        You and Maksym Slobodianyk acknowledge that, in the event of any
+        third-party claim that the Service or your possession and use of the
+        Service infringes that third party's intellectual property rights,
+        Maksym Slobodianyk, not Apple, will be solely responsible for the
+        investigation, defense, settlement, and discharge of any such
+        intellectual property infringement claim.
+      </p>
+
+      <h3>Legal Compliance</h3>
+
+      <p>
+        You represent and warrant that (i) you are not located in a country that
+        is subject to a U.S. Government embargo, or that has been designated by
+        the U.S. Government as a "terrorist supporting" country; and (ii) you
+        are not listed on any U.S. Government list of prohibited or restricted
+        parties.
+      </p>
+
+      <h3>Third-Party Beneficiary</h3>
+
+      <p>
+        You and Maksym Slobodianyk acknowledge and agree that Apple, and Apple's
+        subsidiaries, are third-party beneficiaries of these Terms, and that,
+        upon your acceptance of the terms and conditions of these Terms, Apple
+        will have the right (and will be deemed to have accepted the right) to
+        enforce these Terms against you as a third-party beneficiary thereof.
+      </p>
     </div>
-</body>
+  </body>
 </html>
-
