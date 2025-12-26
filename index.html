@@ -1716,7 +1716,8 @@
         <div class="hero-visual">
           <div class="app-screenshot">
             <img
-              src="media/consumables_list.gif"
+              id="consumables-list-image"
+              src="media/consumables_list.png"
               alt="SparesBro App - Consumables List"
             />
           </div>
@@ -2209,5 +2210,23 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Preload GIF and swap once loaded
+      (function () {
+        const img = document.getElementById("consumables-list-image");
+        const gifSrc = "media/consumables_list.gif";
+
+        // Create a new Image object to preload the GIF
+        const gifImage = new Image();
+
+        // Once the GIF is loaded, swap the src
+        gifImage.onload = function () {
+          img.src = gifSrc;
+        };
+
+        // Start loading the GIF
+        gifImage.src = gifSrc;
+      })();
+    </script>
   </body>
 </html>
