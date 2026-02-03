@@ -1097,171 +1097,6 @@
         line-height: 1.45;
       }
 
-      /* Pricing Section */
-      .pricing-section {
-        padding: 120px 24px;
-        background: linear-gradient(180deg, var(--bg-cream) 0%, white 100%);
-      }
-
-      .pricing-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-
-      .pricing-card {
-        background: white;
-        border-radius: 28px;
-        padding: 40px;
-        box-shadow: var(--card-shadow);
-        border: 2px solid transparent;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .pricing-card:hover {
-        transform: translateY(-8px);
-        box-shadow: var(--card-shadow-hover);
-      }
-
-      .pricing-card.featured {
-        border-color: var(--mascot-orange);
-      }
-
-      .pricing-badge {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: linear-gradient(
-          135deg,
-          var(--mascot-orange) 0%,
-          var(--mascot-orange-dark) 100%
-        );
-        color: white;
-        padding: 6px 14px;
-        border-radius: 50px;
-        font-size: 0.75rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
-      }
-
-      .pricing-tier {
-        font-size: 0.85rem;
-        font-weight: 700;
-        color: var(--primary-blue);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: 8px;
-      }
-
-      .pricing-name {
-        font-size: 1.8rem;
-        font-weight: 900;
-        color: var(--text-dark);
-        margin-bottom: 8px;
-      }
-
-      .pricing-price {
-        display: flex;
-        align-items: baseline;
-        gap: 4px;
-        margin-bottom: 24px;
-      }
-
-      .pricing-amount {
-        font-size: 2.5rem;
-        font-weight: 900;
-        color: var(--text-dark);
-      }
-
-      .pricing-period {
-        font-size: 1rem;
-        color: var(--text-light);
-        font-weight: 600;
-      }
-
-      .pricing-desc {
-        color: var(--text-muted);
-        font-size: 0.95rem;
-        margin-bottom: 32px;
-        line-height: 1.6;
-      }
-
-      .pricing-features {
-        list-style: none;
-        margin-bottom: 32px;
-      }
-
-      .pricing-features li {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 12px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        font-size: 0.95rem;
-        color: var(--text-dark);
-      }
-
-      .pricing-features li:last-child {
-        border-bottom: none;
-      }
-
-      .pricing-features li svg {
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-      }
-
-      .pricing-features li svg.check {
-        color: var(--status-green);
-      }
-
-      .pricing-features li svg.x {
-        color: var(--text-light);
-      }
-
-      .pricing-cta {
-        display: block;
-        width: 100%;
-        padding: 16px 24px;
-        border-radius: 14px;
-        font-size: 1rem;
-        font-weight: 700;
-        text-align: center;
-        text-decoration: none;
-        transition: all 0.2s ease;
-      }
-
-      .pricing-cta.primary {
-        background: linear-gradient(
-          135deg,
-          var(--mascot-orange) 0%,
-          var(--mascot-orange-dark) 100%
-        );
-        color: white;
-        box-shadow: 0 4px 20px rgba(255, 112, 67, 0.3);
-      }
-
-      .pricing-cta.primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 30px rgba(255, 112, 67, 0.4);
-      }
-
-      .pricing-cta.secondary {
-        background: var(--bg-white);
-        color: var(--text-dark);
-        border: 2px solid rgba(0, 0, 0, 0.08);
-      }
-
-      .pricing-cta.secondary:hover {
-        border-color: var(--primary-blue);
-        color: var(--primary-blue);
-      }
-
       /* Mini Section */
       .mini-section {
         padding: 100px 24px;
@@ -1598,11 +1433,6 @@
           margin: 0 auto;
         }
 
-        .pricing-grid {
-          grid-template-columns: 1fr;
-          max-width: 400px;
-        }
-
         .footer-top {
           flex-direction: column;
           align-items: center;
@@ -1633,7 +1463,6 @@
         .problem-section,
         .features-section,
         .notifications-section,
-        .pricing-section,
         .mini-section {
           padding: 80px 16px;
         }
@@ -1687,7 +1516,6 @@
         </a>
         <div class="nav-links">
           <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
           <a href="support.html">Support</a>
           <a
             href="https://apps.apple.com/cz/app/sparesbro/id6754807916"
@@ -2018,157 +1846,6 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing-section">
-      <div class="section-container">
-        <div class="section-header">
-          <span class="section-tag">No Subscriptions</span>
-          <h2>Go Unlimited Forever.</h2>
-          <p>
-            Start for free. Upgrade once to track unlimited items and and use
-            the home screen widget. No subscriptions.
-          </p>
-        </div>
-        <div class="pricing-grid">
-          <!-- Essential -->
-          <div class="pricing-card">
-            <div class="pricing-tier">Essential</div>
-            <div class="pricing-price">
-              <span class="pricing-amount">Free</span>
-            </div>
-            <p class="pricing-desc">
-              Perfect for trying out SparesBro or tracking your most important
-              item.
-            </p>
-            <ul class="pricing-features">
-              <li>
-                <svg
-                  class="check"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path d="M20 6L9 17L4 12" />
-                </svg>
-                2 Consumable Items
-              </li>
-              <li>
-                <svg
-                  class="check"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path d="M20 6L9 17L4 12" />
-                </svg>
-                Time & Usage Tracking
-              </li>
-              <li>
-                <svg
-                  class="check"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path d="M20 6L9 17L4 12" />
-                </svg>
-                Full Notification Setup
-              </li>
-              <li>
-                <svg
-                  class="x"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path d="M18 6L6 18M6 6L18 18" />
-                </svg>
-                <span style="color: var(--text-light)"
-                  >Home Screen Widgets</span
-                >
-              </li>
-            </ul>
-            <a
-              href="https://apps.apple.com/cz/app/sparesbro/id6754807916"
-              class="pricing-cta secondary"
-              >Try SparesBro Essential</a
-            >
-          </div>
-
-          <!-- Unlimited -->
-          <div class="pricing-card featured">
-            <div class="pricing-tier">Unlimited</div>
-            <div class="pricing-price">
-              <span class="pricing-amount">$7.99</span>
-              <span class="pricing-period">one-time</span>
-            </div>
-            <p class="pricing-desc">
-              Unlock everything. Track your entire home with no limits, forever.
-            </p>
-            <ul class="pricing-features">
-              <li>
-                <svg
-                  class="check"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path d="M20 6L9 17L4 12" />
-                </svg>
-                <strong>Unlimited</strong> Consumables
-              </li>
-              <li>
-                <svg
-                  class="check"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path d="M20 6L9 17L4 12" />
-                </svg>
-                Time & Usage Tracking
-              </li>
-              <li>
-                <svg
-                  class="check"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path d="M20 6L9 17L4 12" />
-                </svg>
-                Full Notification Setup
-              </li>
-              <li>
-                <svg
-                  class="check"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <path d="M20 6L9 17L4 12" />
-                </svg>
-                Home Screen Widgets
-              </li>
-            </ul>
-            <a
-              href="https://apps.apple.com/cz/app/sparesbro/id6754807916"
-              class="pricing-cta primary"
-              >Get SparesBro Unlimited</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Mini Section -->
     <section class="mini-section">
       <div class="mini-section-content">
@@ -2217,7 +1894,6 @@
             <div class="footer-column">
               <h4>Product</h4>
               <a href="#features">Features</a>
-              <a href="#pricing">Pricing</a>
               <a href="support.html">Support</a>
             </div>
             <div class="footer-column">
@@ -2229,7 +1905,7 @@
         </div>
         <div class="footer-bottom">
           <p>
-            © 2025 SparesBro. Made with ❤️ by
+            © 2026 SparesBro. Crafter by
             <strong>Maksym Slobodianyk</strong>
           </p>
           <p>
