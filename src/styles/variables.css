@@ -1,0 +1,29 @@
+:root {
+  /* Primary Colors */
+  --primary-blue: #1e88e5;
+  --primary-blue-dark: #1565c0;
+  --primary-blue-light: #42a5f5;
+
+  /* Mascot/Accent Colors */
+  --mascot-orange: #ff7043;
+  --mascot-orange-dark: #f4511e;
+  --mascot-orange-light: #ff8a65;
+
+  /* Status Colors */
+  --status-green: #4caf50;
+  --status-red: #ef5350;
+  --status-yellow: #ffc107;
+
+  /* Background Colors */
+  --bg-white: #fafbfc;
+  --bg-cream: #fff8f5;
+
+  /* Text Colors */
+  --text-dark: #1a2b3c;
+  --text-muted: #5a6b7c;
+  --text-light: #8a9bac;
+
+  /* Shadows */
+  --card-shadow: 0 4px 24px rgba(30, 136, 229, 0.08);
+  --card-shadow-hover: 0 12px 40px rgba(30, 136, 229, 0.15);
+}
